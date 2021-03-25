@@ -1,11 +1,7 @@
 package com.company;
+import com.company.bubbleSort.*;
 
-import com.company.bubbleSort.BubbleSort;
-
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
-
 
 public class Main {
 
