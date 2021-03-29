@@ -4,10 +4,10 @@ public class IPAddress implements Comparable<IPAddress> {
 
     private long ipFrom;
     private long ipTo;
-    private String countryCode;
-    private String countryName;
-    private String regionName;
-    private String cityName;
+    public String countryCode;
+    public String countryName;
+    public String regionName;
+    public String cityName;
 
     public IPAddress(long ipForm, long ipTo, String countryCode, String countryName, String regionName, String cityName) {
         this.ipFrom = ipForm;
