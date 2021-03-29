@@ -4,10 +4,11 @@ public class BubbleSort {
 
     static boolean swapped;
 
-    public static void sort(int[] elements) {
+    @SuppressWarnings({"rawtypes","unchecked"})
+    public static void sort(Comparable[] elements) {
         for (int i = 0; i < elements.length; i++) {
             for (int j = 1; j < elements.length - i; j++) {
-                if (elements[j - 1] > elements[j]) {
+                if (elements[j - 1].compareTo(elements[j])>0) {
                     swap(elements, j - 1, j);
                 }
             }
@@ -16,9 +17,9 @@ public class BubbleSort {
             }
         }
     }
-
-    public static void swap(int[] elements, int a, int b) {
-        int tmp = elements[a];
+    @SuppressWarnings({"rawtypes","unchecked"})
+    public static void swap(Comparable[] elements, int a, int b) {
+        Comparable tmp = elements[a];
         elements[a] = elements[b];
         elements[b] = tmp;
         swapped = true;

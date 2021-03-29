@@ -18,25 +18,11 @@ public class IPAddress implements Comparable<IPAddress> {
         this.cityName = cityName;
     }
 
-
-    public long getIpFrom() {
-        return ipFrom;
-    }
-
-    public long getIpTo() {
-        return ipTo;
-    }
-
     @Override
     public String toString() {
-        return "IPAddress{" +
-                "ipFrom=" + ipFrom +
-                ", ipTo=" + ipTo +
-                ", countryCode='" + countryCode + '\'' +
-                ", countryName='" + countryName + '\'' +
-                ", regionName='" + regionName + '\'' +
-                ", cityName='" + cityName + '\'' +
-                '}';
+        return "\"" + ipFrom
+                + "\"" + "," + "\"" + ipTo + "\"" + "," + "\"" + countryCode + "\"" + "," + "\"" + countryName + "\"" + "," + "\"" + regionName + "\"" + "," + "\"" + cityName + "\"" ;
+
     }
 
     @Override
